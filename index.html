@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   
+    <title>Coffe-Shop</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" id="navbar">
+        <div class="logo">Café Aroma</div>
+          <!-- <i class="fa-solid fa-bars" id="menu"></i> -->
+        <ul class="nav-links">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#localizacao">localização</a></li>
+          
+        </ul>
+        <div class="carrinho">
+        <!-- <i class="fa-solid fa-bars" id="menu"></i> -->
+        <div class="carrinho-icone">
+          
+             🛒 
+             <span class="contador">0</span>
+
+             <div class="produtos"></div>
+             
+        </div>
+        <i class="fa-solid fa-bars" id="menu"></i>
+        </div>
+      </nav>
+    </header>
+    
+    <div class="lista-carrinho">
+        <h3>Produtos no Carrinho</h3>
+        <ul id="carrinho-lista">
+           <p> Nemhum produto no carrinho</p>
+        </ul>
+        <p>Total: R$ <span id="total">0</span></p>
+    </div>
+   
+        <section id="home" class="hero">
+          <div class="hero-conteudo">
+            <h1>Bem-vindo ao Café Aroma</h1>
+            <p>Descubra o sabor autêntico do café artesanal</p>
+            <a href=" #" class="btn">Conheça nossos cafés</a>
+          </div>
+        </section>
+      <main>
+        <section class="sobre" id="sobre">
+          <div class="container">
+            <h2>Sobre nós</h2>
+            <p>
+              Há mas de 10 anos, o café Aroma traz a mehor experiência em café
+              artesanal,Selecionamos grãos especiais de produtoes locais cda
+              xícara com dedicação e paixão
+            </p>
+          </div>
+        </section>
+
+        <section id="produtos" class="produtos">
+          <div class="container">
+            <h2 >Nossos Produtos</h2>
+          <div class="produtos-grid">
+           <!-- navegador coment -->
+
+              <article class="produto-card">
+                <div class="produto-img">
+                  <img
+                    src="https://images.emojiterra.com/google/noto-emoji/animated-emoji/2615.gif"
+                    alt=""
+                  />
+                </div>
+                <h3>Expresso</h3>
+                <p>Café puro e intenso,preparado na pressão perfeita</p>
+                <span class="preco"> R$ 8,00</span>
+                 <button class="adicionar" id="adicionar" data-id="1">Adicionar ao carrinho</button>
+              </article>
+
+              <article class="produto-card">
+                <div class="produto-img">
+                   🥛
+                </div>
+                <h3>Cappuccino</h3>
+                <p>Cremoso e suave,com espuma de leite perfeita</p>
+                <span class="preco"> R$ 12,00</span>
+                 <button class="adicionar" id="adicionar" data-id="2">Adicionar ao carrinho</button>
+              </article>
+
+              <article class="produto-card">
+                <div class="produto-img">
+                   🥛
+                </div>
+                <h3>expresso com leite</h3>
+                <p>Cremoso e suave,com espuma de leite perfeita</p>
+                <span class="preco"> R$ 8,00</span>
+                <button class="adicionar" id="adicionar" data-id="3">Adicionar ao carrinho</button>
+              </article>
+
+               <article class="produto-card">
+                <div class="produto-img">
+                   🥛
+                </div>
+                <h3>Cappuccino premium </h3>
+                <p>Cremoso e suave,com espuma de leite perfeita</p>
+                <span class="preco"> R$ 12,00</span>
+                <button class="adicionar" id="adicionar" data-id="4">Adicionar ao carrinho</button>
+              </article>
+
+             
+
+             
+
+             
+
+
+             <article class="produto-card">
+                <div class="produto-img">
+                    🧊
+                </div>
+                <h3>Café Gelado</h3>
+                <p>Refrescate e saboroso para dias quentes</p>
+                <span class="preco">R$10,00</span>
+                <button class="adicionar" id="adicionar" data-id="5">Adicionar ao carrinho</button>
+              </article>
+
+            </div>
+          </div>
+        </section>
+        
+
+        <section id="localizacao" class="localizacao">
+            <div class="container">
+                <h2>Onde Estamos</h2>
+                <div class="contato-info">
+                    <p>
+                        Rua do café Gostoso - Centro - Cidade Amorosa
+                    </p>
+                    <p>
+                        Telefone: (99) 9999-9999
+                    </p>
+                
+                    <p>
+                        contato@animated-emoji
+                    </p>
+                
+                </div>
+
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117049.12080876056!2d-46.54074804179683!3d-23.5402332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6798988e5b79%3A0xb0753dd155e5679!2sAroma%20Prime%20Restaurante!5e0!3m2!1ses-419!2sbr!4v1760711184003!5m2!1ses-419!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </section>
+      </main>
+
+      <footer>
+        <p>2025 Café Aroma - Todos os direitos Resevados</p>
+      </footer>
+  
+      <script src="script.js"></script>
+ 
+     
+
+  </body>
+</html>
